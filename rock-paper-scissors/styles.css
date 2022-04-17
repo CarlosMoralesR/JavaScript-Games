@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(134, 177, 214);
+    text-decoration: underline;
+    background-color: lightpink;
+}
+
+h2 {
+    color: palevioletred;
+    font-weight: 700;
+}
+
+h3 {
+    color: palevioletred;
+}
+
+span {
+    color: lightcoral;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+#rock {
+    background-color: lightcoral;
+}
+
+#paper {
+    background-color: lightsalmon;
+}
+
+#scissors {
+    background-color: lightpink;
+}
+
+.score-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "user-score-title computer-score-title"
+        "user-score computer-score";
+}
+
+.score-container h3 {
+    padding: 0px 10px 0px 10px;
+}
+
+.user-score-title {
+    grid-area: user-score-title;
+}
+
+.computer-score-title {
+    grid-area: computer-score-title;
+}
+
+#user-score {
+    grid-area: user-score;
+}
+
+#computer-score {
+    grid-area: computer-score;
+}
